@@ -25,7 +25,7 @@ The analysis reveals that the profit decline is **not** due to a lack of demand 
 ### 1. The "Profitless Growth" Trap
 The company is scaling revenue successfully, but efficiency is dropping. As shown below, Q4 is traditionally the strongest quarter. In 2025, while the blue line (Sales) reached a new peak, the green line (Profit) diverged downward. This shows we are spending too much to acquire each sale.
 
-![Sales vs Profit Trend](assets/Sales_Profit.png)
+![Sales vs Profit Trend](images/Sales_Profit.png)
 *Figure 1: Comparison of Sales vs. Profit over time. Note the divergence in Q4 2025.*
 
 ### 2. Identifying the Bleeding Regions
@@ -33,7 +33,7 @@ While the US market remained stable, the **APJ (Asia Pacific)** and **EMEA (Euro
 * **APJ:** Generated 18% of sales but only 3% of profit.
 * **Specific Product Leaks:** The product "Contact Matcher" alone lost **$11.5k** in APJ, and "Big Ol Database" lost **$3.6k** in EMEA. These are otherwise profitable products in other regions, pointing to a regional pricing anomaly rather than a product defect.
 
-![Regional Product Performance](assets/Product_Region.png)
+![Regional Product Performance](images/Product_Region.png)
 *Figure 2: Profit Breakdown by Region and Product. The negative bars highlight specific product failures in APJ and EMEA.*
 
 ### 3. The Impact of Aggressive Discounting
@@ -41,7 +41,7 @@ Deep diving into pricing revealed the root cause: unregulated discounts.
 * **The Red Zone:** Transactions with discounts of 30% or higher resulted in a cumulative loss of **$47k**.
 * **The Culprits:** The "Contact Matcher" and "Big Ol Database" products saw the heaviest discounting, driving them into negative profitability.
 
-![Discount Heatmap](assets/Profit_Table.png)
+![Discount Heatmap](images/Profit_Table.png)
 *Figure 3: Net Profit/Loss by Product and Discount Tier. Discounts >30% consistently yield negative returns.*
 
 ### 4. Product Portfolio Optimization
@@ -50,7 +50,7 @@ Not all products are performing equally.
 * **Underperformers:** "Contact Matcher" drove high volume but negative profit due to the discount issues identified above.
 * **Redundancies:** We have several "Gold" variants (e.g., *SaaS Connector Pack - Gold*) that are not outperforming their standard counterparts, creating portfolio bloat.
 
-![Product Scatter Plot](assets/Product_Performance.png)
+![Product Scatter Plot](images/Product_Performance.png)
 *Figure 4: Profit vs. Quantity Sold. High volume does not equal high profit.*
 
 ### 5. The "Efficient Frontier" of Discounting
@@ -58,7 +58,7 @@ There is a positive correlation between discounts and revenue (discounts *do* dr
 * **The 20% Threshold:** The data shows that we can generate significant revenue ($200k+) with a maximum discount of 20%.
 * **Wasteful Spend:** To generate that same revenue using high discounts (>30%), we essentially "gave away" $55k in value compared to just $20k in value at the lower tier.
 
-![Sales vs Discount Correlation](assets/Discounts_Revenue.png)
+![Sales vs Discount Correlation](images/Discounts_Revenue.png)
 *Figure 5: Correlation between Sales and Discounts. The trend holds even when high discounts are removed, proving deep cuts are unnecessary.*
 
 ### 6. Discounting Does Not Buy Loyalty
@@ -66,7 +66,7 @@ A common justification for high discounts is "Customer Lifetime Value" (LTV)—t
 * **Negative Correlation:** Customers who received the highest average discounts actually generated the **lowest** total lifetime profit for the company.
 * **Strategy Shift:** Buying loyalty with price cuts is a failed strategy.
 
-![LTV Scatter Plot](assets/Customer_Loyalty.png)
+![LTV Scatter Plot](images/Customer_Loyalty.png)
 *Figure 6: Lifetime Value (Profit-based) vs. Average Discount. Higher discounts correlate with lower long-term value.*
 
 ---
